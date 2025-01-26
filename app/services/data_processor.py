@@ -1,5 +1,4 @@
 def process_data(data):
-    # Overly complex data processing with redundant steps
     processed = ""
     for char in data:
         if char.isalpha():

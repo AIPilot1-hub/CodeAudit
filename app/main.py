@@ -3,7 +3,7 @@ from services import email_service, data_processor
 import config.settings
 
 def main():
-    print("Starting Test Bench Application"  # Missing closing parenthesis
+    print("Starting Test Bench Application"
 
     user_name = input("Enter your username: ")
     user_password = input("Enter your password: ")

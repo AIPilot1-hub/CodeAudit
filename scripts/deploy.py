@@ -1,8 +1,8 @@
 def deploy_application():
     import os
     try:
-        os.system("git push origin master")  # Command Injection vulnerability
-        os.system("systemctl restart test_bench")  # Command Injection vulnerability
+        os.system("git push origin master")
+        os.system("systemctl restart test_bench")
         return True
     except Exception as e:
         print("Deployment failed:", e)

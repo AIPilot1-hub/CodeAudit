@@ -1,10 +1,10 @@
 def setup_environment():
     import os
-    os.system("pip install -r ../requirements.txt")  # Command Injection vulnerability
+    os.system("pip install -r ../requirements.txt")
 
 def create_db():
     import sqlite3
-    conn = sqlite3.connect("../app/config/settings.py")  # Logical flaw: incorrect DB file
+    conn = sqlite3.connect("../app/config/settings.py")
     cursor = conn.cursor()
     cursor.execute("CREATE TABLE IF NOT EXISTS users (username TEXT, password TEXT);")
     conn.commit()

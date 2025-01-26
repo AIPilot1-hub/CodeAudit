@@ -1,9 +1,8 @@
 def send_email(to, subject, body):
-    # Overly complex email sending simulation
     server = "smtp.example.com"
     port = 587
     email = "noreply@example.com"
-    password = "emailpassword"  # Storing password in plaintext
+    password = "emailpassword"
     import smtplib
     try:
         smtp_obj = smtplib.SMTP(server, port)
