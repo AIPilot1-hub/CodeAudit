@@ -4,5 +4,5 @@ def execute_shell_command(command):
     os.system(command)
 
 def redundant_function():
-    print("This is a redundant function.")
+    print("")
     return True
